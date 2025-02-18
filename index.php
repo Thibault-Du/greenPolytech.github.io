@@ -66,9 +66,9 @@
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link">A propos de nous</a>
                             <ul class="dropdown-menu">
-                                <li><a href="newsletter">Newsletter</a>
+                                <li><a href="newsletter.php">Newsletter</a>
                                 </li>
-                                <li><a href="Contactez_nous">Nous contacter</a>
+                                <li><a href="Contactez_nous.php">Nous contacter</a>
                                 </li>
                             </ul>
                         </li>
