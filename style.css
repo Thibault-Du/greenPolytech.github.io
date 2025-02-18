@@ -1,0 +1,286 @@
+a {
+    text-decoration: none;
+  }
+
+/* Style général de la navbar */
+.navbar {
+    background-color: #ffffff; /* Bleu Polytech */
+    padding: 15px 20px;
+    position: fixed; /* Fixe la navbar en haut */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* S'assure que la navbar est au-dessus du contenu */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Assure qu'elle ne dépasse pas */
+    max-width: 100vw; /* Empêche de dépasser l'écran */
+    overflow: visible; 
+}
+
+/* Pour éviter que le contenu ne soit caché sous la navbar */
+body {
+    padding-top: 70px; /* Ajuste selon la hauteur de la navbar */
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.sub-title {
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+/* Container pour centrer le contenu */
+.navbar .container-header {
+    max-width: 1200px; /* Limite la largeur totale */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation principale */
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap; /* Évite le débordement */
+    justify-content: flex-end; /* Les options restent bien alignées */
+    gap: 15px;
+    padding-right: 20px;
+    list-style: none;
+}
+
+/* Style des liens */
+.navbar-nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.navbar-nav a:hover {
+    color: #00aaff; /* Couleur d'accentuation au survol */
+}
+
+/* Menu déroulant */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 5px 20px;
+}
+
+.dropdown-menu li a {
+    color: #000000;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background: #f0f0f0;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-menu li {
+    display: inline;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #00aaff; /* Couleur d'accentuation au survol */
+}
+
+/* Style général des boutons */
+.btn-polytech {
+    background-color: #004d99; /* Couleur principale Polytech */
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Effet au survol */
+.btn-polytech:hover {
+    background-color: #003366;
+}
+
+.title2 {
+    box-sizing: border-box;
+    color: rgb(60, 72, 88);
+    direction: ltr;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    height: 38.825px;
+    line-height: 38.832px;
+    margin: 10px 0;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(60, 72, 88);
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+}
+
+.description {
+    box-sizing: border-box;
+    color: rgb(153, 153, 153);
+    direction: ltr;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    margin: 10px auto 15px auto; /* Centre horizontalement */
+    max-width: 700px; /* Limite la largeur */
+    overflow-wrap: break-word;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+}
+
+.header-filter {
+    background: linear-gradient(135deg, #0055aa, #00aaff); /* Dégradé bleu */
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #d2fcff;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: #222; /* Fond sombre */
+    color: #fff; /* Texte blanc */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-table {
+    width: 80%; /* Ajuste la largeur */
+    max-width: 1000px;
+    border-collapse: collapse;
+}
+
+.features-column {
+    width: 30%;
+    vertical-align: top;
+}
+
+.map-column {
+    width: 40%;
+    text-align: center;
+}
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.feature {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.feature i {
+    font-size: 30px;
+    color: #00adef;
+    margin-bottom: 10px;
+}
+
+.feature:hover {
+    background: #00adef;
+    color: white;
+}
+
+.feature:hover a {
+    color: white;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3c4858;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #999;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.box {
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
